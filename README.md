@@ -1,2 +1,2 @@
-# app_template
+# android basic
 Basic android app template
