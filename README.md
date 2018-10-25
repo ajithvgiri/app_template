@@ -28,23 +28,24 @@ startActivity(new Intent(this, YourActivity.class));
 
 ``` kotlin
 // get fragment manager
-        val fm = supportFragmentManager
+val fm = supportFragmentManager
 
-        // add
-        val ft = fm.beginTransaction()
-        ft.add(R.id.your_placehodler, YourFragment())
-        ft.commit()
+// add
+val ft = fm.beginTransaction()
+ft.add(R.id.your_placehodler, YourFragment())
+ft.commit()
 
-        // replace
-        val ft = fm.beginTransaction()
-        ft.replace(R.id.your_placehodler, YourFragment())
-        ft.commit()
+// replace
+val ft = fm.beginTransaction()
+ft.replace(R.id.your_placehodler, YourFragment())
+ft.commit()
 
-        // remove
-        val fragment = fm.findFragmentById(R.id.your_placehodler)
-        val ft = fm.beginTransaction()
-        ft.remove(fragment)
-        ft.commit()
+// remove
+val fragment = fm.findFragmentById(R.id.your_placehodler)
+val ft = fm.beginTransaction()
+ft.remove(fragment)
+ft.commit()
+
 ```
 
 
